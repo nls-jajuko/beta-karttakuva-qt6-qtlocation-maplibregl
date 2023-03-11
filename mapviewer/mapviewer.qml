@@ -54,7 +54,6 @@ import QtLocation
 import QtPositioning
 import "map"
 import "menus"
-import "helper.js" as Helper
 
 ApplicationWindow {
     id: appWindow
