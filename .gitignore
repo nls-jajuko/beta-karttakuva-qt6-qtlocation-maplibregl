@@ -1,0 +1,4 @@
+CMakeLists.txt.user
+**/CMakeLists.txt.user
+.DS_Store
+**/.DS_Store
