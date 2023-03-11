@@ -48,21 +48,11 @@
 **
 ****************************************************************************/
 
-#include <QtCore/QTextStream>
 #include <QtGui/QGuiApplication>
 #include <QtQml/QQmlApplicationEngine>
-#include <QtQuick/QQuickItem>
 #include <QtQuick/QQuickWindow>
-
 #include <QSGRendererInterface>
-
-#if QT_CONFIG(ssl)
-#include <QSslSocket>
-#endif
-#include <QQmlContext>
-#include <QDebug>
 #include <QString>
-#include <QSurfaceFormat>
 
 
 int main(int argc, char *argv[])

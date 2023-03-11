@@ -60,8 +60,6 @@ ApplicationWindow {
     id: appWindow
     property variant map
 
-
-
     property variant styles : [{
             tr: qsTr("Maastokartta"),
             style: "https://beta-karttakuva.maanmittauslaitos.fi/vectortiles/v20/hobby-3857.json"
@@ -78,7 +76,6 @@ ApplicationWindow {
     property variant parameters: [
         appWindow.styleParam
     ];
-    property variant plugin : Plugin { name : 'maplibregl' ; parameters: appWindow.parameters }
 
     title: qsTr("BetaKarttakuva")
     height: 640
@@ -98,18 +95,7 @@ ApplicationWindow {
     }
 
 
-    Component {
-        id: mapComponent
 
-        MapComponent{
-            width: page.width
-            height: page.height
-
-
-            plugin : appWindow.plugin
-
-        }
-    }
 
     StackView {
         id: stackView
@@ -118,6 +104,14 @@ ApplicationWindow {
         initialItem: Item {
             id: page
 
+            MapComponent{
+                id: map
+                width: page.width
+                height: page.height
+
+                plugin: Plugin { name : 'maplibregl' ; parameters: appWindow.parameters }
+
+            }
 
         }
 
@@ -129,15 +123,12 @@ ApplicationWindow {
 
     function createMap(params)
     {
-
-        map = mapComponent.createObject(page);
-        //map.plugin = plugin;
         map.center = {
-            latitude: params.latitude, //60.17796,
-            longitude: params.longitude //24.8071
+            latitude: params.latitude,
+            longitude: params.longitude
         }
 
-        map.zoomLevel = params.zoomLevel; //13;
+        map.zoomLevel = params.zoomLevel;
 
 
         mainMenu.mapTypeMenu.createMenu(map,styles)
