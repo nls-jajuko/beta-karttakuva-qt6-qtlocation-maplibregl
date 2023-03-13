@@ -67,11 +67,14 @@ ApplicationWindow {
             tr: qsTr("Taustakartta"),
             style: "qrc:/stylejson/taustakartta-3857.json"
         },{
-            tr: qsTr("Kiinteistöjaotus taustakartta"),
-            style: "qrc:/stylejson/kiinteistojaotus-taustakartta-3857.json"
+            tr: qsTr("Kiinteistöjaotus maastokartta"),
+            style: "qrc:/stylejson/kiinteistojaotus-maastokartta-3857.json"
         },{
             tr: qsTr("Kiinteistöjaotus ortokuva"),
             style: "qrc:/stylejson/kiinteistojaotus-ortokuva-3857.json"
+        },{
+            tr: qsTr("Kiinteistöjaotus taustakarttarasteri"),
+            style: "qrc:/stylejson/kiinteistojaotus-taustakarttarasteri-3857.json"
         }
     ];
 

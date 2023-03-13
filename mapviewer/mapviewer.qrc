@@ -8,11 +8,11 @@
         <file>helper.js</file>
         <file>resources/scale_end.png</file>
         <file>resources/scale.png</file>
-        <file>resources/marker.png</file>
         <file>resources/icon.png</file>
-        <file>stylejson/kiinteistojaotus-taustakartta-3857.json</file>
         <file>stylejson/kiinteistojaotus-ortokuva-3857.json</file>
         <file>stylejson/taustakartta-3857.json</file>
         <file>stylejson/maastokartta-3857.json</file>
+        <file>stylejson/kiinteistojaotus-maastokartta-3857.json</file>
+        <file>stylejson/kiinteistojaotus-taustakarttarasteri-3857.json</file>
     </qresource>
 </RCC>
