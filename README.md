@@ -8,6 +8,8 @@ Qt6.6.0 with Qt6 qtlocation maplibgregl geoservices plugin is based on
 - https://github.com/qt/qtlocation dev branch 
 - with https://codereview.qt-project.org/c/qt/qtlocation/+/382087 gerrit fetch 
 
+Vector style json files are read from Qt resources.
 Vector style json files use a dev api-key. Get the Api key free at maanmittauslaitos.fi
+
 
 ![Beta Karttakuva Qt6 qtlocation maplibregl  screenshot](index.png)
