@@ -59,13 +59,21 @@ ApplicationWindow {
     id: appWindow
     property variant map
 
+
     property variant styles : [{
             tr: qsTr("Maastokartta"),
-            style: "https://beta-karttakuva.maanmittauslaitos.fi/vectortiles/v20/hobby-3857.json"
+            style: "qrc:/stylejson/maastokartta-3857.json"
         },{
             tr: qsTr("Taustakartta"),
-            style: "https://beta-karttakuva.maanmittauslaitos.fi/vectortiles/v20/taustakartta-3857.json"
-        }];
+            style: "qrc:/stylejson/taustakartta-3857.json"
+        },{
+            tr: qsTr("Kiinteistöjaotus taustakartta"),
+            style: "qrc:/stylejson/kiinteistojaotus-taustakartta-3857.json"
+        },{
+            tr: qsTr("Kiinteistöjaotus ortokuva"),
+            style: "qrc:/stylejson/kiinteistojaotus-ortokuva-3857.json"
+        }
+    ];
 
     property variant styleParam : PluginParameter {
         name: 'maplibregl.mapping.additional_style_urls';

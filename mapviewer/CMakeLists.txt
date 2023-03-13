@@ -47,10 +47,15 @@ set(mapviewer_resource_files
     "map/MapComponent.qml"
     "mapviewer.qml"
     "menus/MainMenu.qml"
+    "stylejson/kiinteistojaotus-ortokuva-3857.json"
+    "stylejson/kiinteistojaotus-taustakartta-3857.json"
+    "stylejson/maastokartta-3857.json"
+    "stylejson/taustakartta-3857.json"
     "resources/icon.png"
     "resources/marker.png"
     "resources/scale.png"
     "resources/scale_end.png"
+
 )
 
 qt6_add_resources(qml_location_mapviewer "mapviewer"

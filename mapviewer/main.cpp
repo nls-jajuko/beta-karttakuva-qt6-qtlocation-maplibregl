@@ -62,10 +62,12 @@ int main(int argc, char *argv[])
     parameters["longitude"] = 24.8071;
     parameters["zoomLevel"] = 13;
 
+
     QQuickWindow::setGraphicsApi(QSGRendererInterface::OpenGL);
     QGuiApplication application(argc, argv);
 
     QQmlApplicationEngine engine;
+
     engine.addImportPath(QStringLiteral(":/imports"));
     engine.load(QUrl(QStringLiteral("qrc:///mapviewer.qml")));
 
